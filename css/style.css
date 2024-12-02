@@ -122,7 +122,7 @@ textarea:focus {
       var(--opacity-primary-color),
       var(--opacity-primary-color)
     ),
-    url("./assets/imgs/hero.png");
+    url("../assets/imgs/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
