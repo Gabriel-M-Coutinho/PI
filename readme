@@ -1,122 +1,21 @@
-# **CENTRO PAULA SOUZA**  
-## **FACULDADE DE TECNOLOGIA DE JAHU**  
-### **CURSO DE TECNOLOGIA EM DESENVOLVIMENTO DE SOFTWARE MULTIPLATAFORMA**  
+## Tecnologias Utilizadas
 
-# **CNPJ CONSULTA**  
-Site de Consulta de Dados Pessoais  
+- **HTML5**: Estrutura básica da página.
+- **CSS**: Estilo personalizado para a interface.
+- **Tailwind CSS**: Framework de CSS para construção de layouts responsivos e estilizados.
+- **API da Receita Federal**: API pública para consulta de dados de empresas a partir do CNPJ.
 
-**Jahu, SP**  
-**2º semestre/2024**  
+## Como Funciona
 
-### Desenvolvido por:
-- João Pedro Padilha Fogagnolo  
-- Gabriel Magina Coutinho  
-- Pedro Henrique do Vale Mineo  
+A aplicação permite que os usuários pesquisem informações sobre empresas usando seu **CNPJ**. Ao enviar o número do CNPJ na interface da aplicação, uma requisição é feita à API da Receita Federal, que retorna os dados relacionados à empresa.
 
----
+### Fluxo da Aplicação:
 
-## **Sumário**
-1. [Descrição da Aplicação Web](#1-descrição-da-aplicação-web)  
-   1.1 [Introdução](#11-introdução)  
-   1.2 [Métodos Utilizados](#12-métodos-utilizados)  
-   1.3 [Cronograma do Projeto](#13-cronograma-do-projeto)  
-2. [Objetivos](#2-objetivos)  
-   2.1 [Geral](#21-geral)  
-   2.2 [Específicos](#22-específicos)  
-3. [Documento de Requisitos](#3-documento-de-requisitos)  
-   3.1 [Requisitos Funcionais](#31-requisitos-funcionais)  
-   3.2 [Requisitos Não Funcionais](#32-requisitos-não-funcionais)  
-   3.3 [Banco de Dados](#33-banco-de-dados)  
-   3.4 [Regras de Negócio](#34-regras-de-negócio)  
-4. [Modelo de Dados](#4-modelo-de-dados)  
-5. [Design](#5-design)  
-6. [Protótipo](#6-protótipo)  
-7. [Aplicação](#7-aplicação)  
-8. [Considerações Finais](#8-considerações-finais)  
-9. [Referências Bibliográficas](#9-referências-bibliográficas)  
-
----
-
-## **1. Descrição da Aplicação Web**  
-
-### **1.1 Introdução**  
-A aplicação **CNPJ Consulta** é uma plataforma web inovadora para geração e gestão de leads especializados, permitindo que empresas acessem informações qualificadas de possíveis clientes. Através de uma interface intuitiva, o sistema facilita a busca e filtragem de dados baseados em CNPJs.  
-
-### **1.2 Métodos Utilizados**  
-- Desenvolvimento com **HTML**, **CSS** e **JavaScript**.  
-- Utilização de APIs para consulta e integração de dados da Receita Federal.  
-- Implementação de um sistema de filtragem eficiente para resultados relevantes.  
-
-### **1.3 Cronograma do Projeto**  
-Cronograma disponível no [Trello do projeto](https://trello.com/b/pZti56T6/salao-de-cabelo-vo-do-michael).  
-
----
-
-## **2. Objetivos**  
-
-### **2.1 Geral**  
-Criar uma aplicação web para consulta e gestão de leads qualificados, otimizando processos de vendas e conectando empresas aos seus clientes ideais.  
-
-### **2.2 Específicos**  
-- Geração de leads qualificados.  
-- Interface intuitiva para fácil acesso e filtragem de dados.  
-- Integração com sistemas de CRM.  
-- Oferecer relatórios analíticos para suporte na tomada de decisão.  
-
----
-
-## **3. Documento de Requisitos**  
-
-### **3.1 Requisitos Funcionais**  
-- Cadastro e login de usuários.  
-- Criação, busca e filtragem de leads.  
-- Processamento seguro de pagamentos.  
-- Histórico de compras e suporte ao cliente.  
-
-### **3.2 Requisitos Não Funcionais**  
-- Desempenho otimizado para múltiplos acessos simultâneos.  
-- Segurança de dados sensíveis.  
-- Compatibilidade com dispositivos móveis e navegadores.  
-- Suporte à acessibilidade para usuários com deficiência.  
-
-### **3.3 Banco de Dados**  
-Banco de dados relacional para armazenamento de leads e informações do usuário.  
-
-### **3.4 Regras de Negócio**  
-Definições de valor, parcerias estratégicas e segmentação de clientes baseadas no **Canvas** do projeto.  
-
----
-
-## **4. Modelo de Dados**  
-> **Descrição:** Diagrama de entidade-relacionamento será incluído aqui.  
-
----
-
-## **5. Design**  
-> **Descrição:** Wireframes e padrões visuais adotados na aplicação.  
-
----
-
-## **6. Protótipo**  
-Protótipo interativo disponível na ferramenta [Figma](https://www.figma.com/).  
-
----
-
-## **7. Aplicação**  
-Descrição da aplicação em funcionamento, com link para repositório e instruções de execução local.  
-
----
-
-## **8. Considerações Finais**  
-Reflexão sobre o impacto e resultados esperados do projeto.  
-
----
-
-## **9. Referências Bibliográficas**  
-1. Receita Federal do Brasil - Base de dados CNPJ.  
-2. Material didático da **FATEC Jahu**.  
-3. Artigos acadêmicos sobre geração de leads e CRM.  
-
----
-
-**[⬆ Voltar ao topo](#)**  
+1. O usuário insere o CNPJ de uma empresa.
+2. A aplicação envia uma solicitação à API da Receita Federal para buscar os dados dessa empresa.
+3. Os dados retornados são exibidos na tela, incluindo informações como:
+    - CNPJ
+    - Razão Social
+    - Nome Fantasia
+    - Endereço
+    - E outros dados relevantes
